@@ -105,4 +105,4 @@ License
 This project is licensed under the Shahriar.inc
 Contact
 
-Your Name
+Raghib Al Shahriar
