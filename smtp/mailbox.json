@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1763935105894,
+    "received_at": "2025-11-24T03:58:25.892702Z",
+    "helo": "HTTP-SUBMIT",
+    "from": "you@example.com",
+    "to": [
+      "now@example.com"
+    ],
+    "subject": "Hts",
+    "body": "hi"
+  },
+  {
+    "id": 1763935160109,
+    "received_at": "2025-11-24T03:59:20.109520Z",
+    "helo": "HTTP-SUBMIT",
+    "from": "now@example.com",
+    "to": [
+      "you@example.com"
+    ],
+    "subject": "Hts",
+    "body": "hlw, how are you\n"
+  },
+  {
+    "id": 1763954038542,
+    "received_at": "2025-11-24T09:13:58.538447Z",
+    "helo": "HTTP-SUBMIT",
+    "from": "you@example.com",
+    "to": [
+      "no@example.com"
+    ],
+    "subject": "subje",
+    "body": "dkdsfkhdk"
+  }
+]

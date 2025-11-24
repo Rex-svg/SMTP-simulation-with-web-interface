@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SMTP Sim — Inbox</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<div class="app">
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar">
+    <h1>smtp-sim</h1>
+
+    <!-- Compose button -->
+    <button id="composeBtn" class="compose">Compose</button>
+
+    <!-- Fixed Compose Panel under the Compose button -->
+    <div id="composePanel" class="compose-panel hidden">
+      <h3>New message</h3>
+      <label>From
+        <input id="c-from" value="you@example.com" />
+      </label>
+      <label>To
+        <input id="c-to" placeholder="comma separated (bob@example.com)" />
+      </label>
+      <label>Subject
+        <input id="c-subject" placeholder="Subject" />
+      </label>
+      <label>Body
+        <textarea id="c-body" rows="6" placeholder="Write your message..."></textarea>
+      </label>
+
+      <div class="compose-actions">
+        <button id="sendBtn" class="send">Send</button>
+        <button id="closeCompose" class="close">Close</button>
+      </div>
+      <div id="composeStatus" class="status"></div>
+    </div>
+
+    <nav class="folders">
+      <div class="folder active">Inbox</div>
+    </nav>
+  </aside>
+
+  <!-- MAIN: list + detail -->
+  <main class="main">
+    <section class="list-pane">
+      <header>
+        <h2>Inbox</h2>
+        <div class="meta" id="count">0 messages</div>
+      </header>
+      <ul id="messages" class="messages"></ul>
+    </section>
+
+    <section class="detail-pane" id="detail">
+      <div class="placeholder">Select a message to view it</div>
+
+      <div class="message-view hidden" id="messageView">
+        <div class="message-header">
+          <div>
+            <div class="subject" id="m-subject"></div>
+            <div class="from-to">
+              <span id="m-from"></span> → <span id="m-to"></span>
+            </div>
+          </div>
+          <div class="date" id="m-date"></div>
+        </div>
+        <pre class="body" id="m-body"></pre>
+      </div>
+
+    </section>
+  </main>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
